@@ -68,7 +68,8 @@ h2 {
 	margin-bottom: 0;
 	width: 100%;
 }
-.table tr {
+
+.table tbody .table tr {
 	width: 100%;
 }
 
