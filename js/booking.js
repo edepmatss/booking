@@ -118,6 +118,14 @@ function validateDates() {
 	return true;
 }
 
+// Ajouter le gestionnaire d'événement pour la soumission du formulaire
+document.addEventListener("DOMContentLoaded", function () {
+	const form = document.getElementById("bookingForm");
+	if (form) {
+		form.addEventListener("submit", validateForm);
+	}
+});
+
 // valider le formulaire
 function validateForm(event) {
 	event.preventDefault(); // stop soumission par défaut
@@ -185,18 +193,10 @@ function validateForm(event) {
 		children,
 		rooms,
 		businessTrip,
-		childrenAges,
+		childrenAges
 	};
 	localStorage.setItem("bookingData", JSON.stringify(bookingData));
 
 	window.location.href = "hotels.html";
 	return true;
 }
-
-// Ajouter le gestionnaire d'événement pour la soumission du formulaire
-document.addEventListener("DOMContentLoaded", function () {
-	const form = document.getElementById("bookingForm");
-	if (form) {
-		form.addEventListener("submit", validateForm);
-	}
-});

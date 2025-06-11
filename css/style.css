@@ -6,6 +6,12 @@
 	--border-color: #dee2e6;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -38,6 +44,14 @@ h2 {
 
 .table {
 	margin-bottom: 0;
+	width: 100%;
+}
+.table tr {
+	width: 100%;
+}
+
+.table tr td {
+	width: 100% !important;
 }
 
 .table td {
@@ -102,12 +116,10 @@ h2 {
 	width: 180px;
 }
 
-/* Style pour les dates */
 input[type="date"] {
 	width: 200px;
 }
 
-/* Style pour le formulaire */
 .form-check {
 	margin-top: 10px;
 }
@@ -117,7 +129,6 @@ input[type="date"] {
 	border-color: var(--secondary-color);
 }
 
-/* Animation pour les transitions */
 .fade-in {
 	animation: fadeIn 0.5s ease-in;
 }
@@ -133,20 +144,17 @@ input[type="date"] {
 	}
 }
 
-/* Style pour les messages d'erreur */
 .error-message {
 	color: var(--accent-color);
 	font-size: 0.875rem;
 	margin-top: 5px;
 }
 
-/* Style pour les champs désactivés */
 input[readonly] {
 	background-color: #f8f9fa;
 	cursor: not-allowed;
 }
 
-/* Style pour les boutons + et - */
 .input-group .btn {
 	width: 40px;
 	padding: 0;
@@ -157,13 +165,11 @@ input[readonly] {
 	font-weight: bold;
 }
 
-/* Style pour le select des pays */
 #country {
 	width: 100%;
 	max-width: 300px;
 }
 
-/* supp flèches des inputs number */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
