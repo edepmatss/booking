@@ -31,96 +31,95 @@
 	</head>
 	<body>
 		<div class="container mt-5">
-			<div class="row justify-content-center">
-				<div class="col-md-8">
-					<div class="card">
-						<div class="card-body">
-							<div class="text-center mb-4">
-								<h1 class="card-title">
-									Confirmation de réservation
-								</h1>
-								<p class="text-muted">
-									Référence:
-									<span id="bookingReference"></span>
-								</p>
-							</div>
+			<div class="title">
+				<h1 class="text-center mb-3">Confirmation de réservation</h1>
+				<h2 class="text-center mb-4">
+					Votre réservation a été enregistrée avec succès
+				</h2>
+			</div>
 
-							<div class="alert alert-success text-center mb-4">
-								<h4 class="alert-heading">
-									Réservation confirmée !
-								</h4>
-								<p>
-									Votre réservation a été enregistrée avec
-									succès.
-								</p>
-							</div>
-
-							<div class="booking-details">
-								<div class="row">
-									<div class="col-md-6">
-										<h5>Détails du séjour</h5>
-										<ul class="list-unstyled">
-											<li>
-												<strong>Hôtel :</strong>
-												<span id="hotelName"></span>
-											</li>
-											<li>
-												<strong>Pays :</strong>
-												<span id="country"></span>
-											</li>
-											<li><strong>Dates :</strong></li>
-											<li class="ms-3">
-												Départ :
-												<span id="departureDate"></span>
-											</li>
-											<li class="ms-3">
-												Arrivée :
-												<span id="arrivalDate"></span>
-											</li>
-								
-										</ul>
-									</div>
-									<div class="col-md-6">
-										<h5>Détails des voyageurs</h5>
-										<ul class="list-unstyled">
-											<li>
-												<strong>Adultes :</strong>
-												<span id="adults"></span>
-											</li>
-											<li>
-												<strong>Enfants :</strong>
-												<span id="children"></span>
-											</li>
-											<div id="childrenAges"></div>
-											<li>
-												<strong>Chambres :</strong>
-												<span id="rooms"></span>
-											</li>
-											<li>
-												<strong
-													>Voyage professionnel
-													:</strong
-												>
-												<span id="businessTrip"></span>
-											</li>
-										</ul>
-									</div>
+			<div class="booking-form">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+								<div class="text-center mb-4">
+									<p class="text-muted">
+										Référence:
+										<span id="bookingReference"></span>
+									</p>
 								</div>
 
-							<div class="text-center mt-4 no-print">
-								<button
-									class="btn btn-primary"
-									onclick="window.print()"
-								>
-									<i class="fas fa-print"></i> Imprimer la
-									confirmation
-								</button>
-								<a
-									href="booking.html"
-									class="btn btn-outline-secondary ms-2"
-								>
-									Retour à l'accueil
-								</a>
+								<div class="alert alert-success text-center mb-4">
+									<h4 class="alert-heading">
+										Réservation confirmée !
+									</h4>
+								</div>
+
+								<div class="booking-details">
+									<div class="row">
+										<div class="col-md-6">
+											<h5 class="fw-bold text-primary">Détails du séjour</h5>
+											<ul class="list-unstyled">
+												<li>
+													<strong>Hôtel :</strong>
+													<span id="hotelName"></span>
+												</li>
+												<li>
+													<strong>Pays :</strong>
+													<span id="country"></span>
+												</li>
+												<li><strong>Dates :</strong></li>
+												<li class="ms-3">
+													Départ :
+													<span id="departureDate"></span>
+												</li>
+												<li class="ms-3">
+													Arrivée :
+													<span id="arrivalDate"></span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<h5 class="fw-bold text-primary">Détails des voyageurs</h5>
+											<ul class="list-unstyled">
+												<li>
+													<strong>Adultes :</strong>
+													<span id="adults"></span>
+												</li>
+												<li>
+													<strong>Enfants :</strong>
+													<span id="children"></span>
+												</li>
+												<div id="childrenAges"></div>
+												<li>
+													<strong>Chambres :</strong>
+													<span id="rooms"></span>
+												</li>
+												<li>
+													<strong
+														>Voyage professionnel
+														:</strong
+													>
+													<span id="businessTrip"></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+								<div class="text-center mt-4 no-print">
+									<button
+										class="btn btn-primary"
+										onclick="window.print()"
+									>
+										<i class="fas fa-print"></i> Imprimer la
+										confirmation
+									</button>
+									<a
+										href="booking.html"
+										class="btn btn-outline-secondary ms-2"
+									>
+										Retour à l'accueil
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>

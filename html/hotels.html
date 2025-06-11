@@ -15,83 +15,188 @@
 	</head>
 	<body>
 		<div class="container mt-5">
-			<h1 class="text-center mb-4">Nos Hôtels Disponibles</h1>
+			<div class="title">
+				<h1 class="text-center mb-3">Nos Hôtels Disponibles</h1>
+				<h2 class="text-center mb-4">
+					Choisissez l'hôtel qui vous correspond
+				</h2>
+			</div>
 
-			<div class="row">
-				<div class="col-md-4 mb-4">
-					<div class="card">
-						<img src="../acc/hotel.jpeg" class="card-img-top" />
-						<div class="card-body">
-							<h5 class="card-title">Hôtel Premium</h5>
-							<p class="card-text">
-								Un hôtel de luxe avec vue panoramique et service
-								personnalisé.
-							</p>
-							<ul class="list-unstyled">
-								<li>svg 5 étoiles</li>
-								<li>svg Hammam et Spa</li>
-								<li>svg Restaurant gastronomique</li>
-							</ul>
-							<button
-								class="btn btn-primary w-100"
-								onclick="selectHotel('Hôtel Premium')"
-							>
-								Je réserve
-							</button>
+			<div class="booking-form">
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow-sm d-flex flex-column">
+							<img
+								src="../img/1.jpg"
+								class="card-img-top"
+								alt="Hôtel Premium"
+							/>
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title fw-bold text-primary">
+									Hôtel Premium
+								</h5>
+								<p class="card-text">
+									Un hôtel de luxe avec vue panoramique et
+									service personnalisé.
+								</p>
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<img
+											src="../acc/star.svg"
+											alt="étoiles"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										5 étoiles
+									</li>
+									<li class="mb-2">
+										<img
+											src="../acc/spa.svg"
+											alt="spa"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										Hammam et Spa
+									</li>
+									<li class="mb-2">
+										<img
+											src="../acc/cook.svg"
+											alt="restaurant"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										Restaurant gastronomique
+									</li>
+								</ul>
+								<div class="mt-auto">
+									<button
+										class="btn btn-primary w-100"
+										onclick="selectHotel('Hôtel Premium')"
+									>
+										Je réserve
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-md-4 mb-4">
-					<div class="card">
-						<img src="../acc/hotel.jpeg" class="card-img-top" />
-						<div class="card-body">
-							<h5 class="card-title">Hôtel Business</h5>
-							<p class="card-text">
-								Idéal pour les voyageurs d'affaires avec des
-								équipements modernes.
-							</p>
-							<ul class="list-unstyled">
-								<li>svg 4 étoiles</li>
-								<li>svg Salle de sport</li>
-								<li>svg Piscine privée</li>
-							</ul>
-							<button
-								class="btn btn-primary w-100"
-								onclick="selectHotel('Hôtel Business')"
-							>
-								Je réserve
-							</button>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow-sm d-flex flex-column">
+							<img
+								src="../img/2.jpg"
+								class="card-img-top"
+								alt="Hôtel Business"
+							/>
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title fw-bold text-primary">
+									Hôtel Business
+								</h5>
+								<p class="card-text">
+									Idéal pour les voyageurs d'affaires avec des
+									équipements modernes.
+								</p>
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<img
+											src="../acc/star.svg"
+											alt="étoiles"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										4 étoiles
+									</li>
+									<li class="mb-2">
+										<img
+											src="../acc/sport.svg"
+											alt="sport"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										Salle de sport
+									</li>
+									<li class="mb-2">
+										<img
+											src="../acc/priv.svg"
+											alt="piscine"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										Piscine privée
+									</li>
+								</ul>
+								<div class="mt-auto">
+									<button
+										class="btn btn-primary w-100"
+										onclick="selectHotel('Hôtel Business')"
+									>
+										Je réserve
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-md-4 mb-4">
-					<div class="card">
-						<img src="../acc/hotel.jpeg" class="card-img-top" />
-						<div class="card-body">
-							<h5 class="card-title">Hôtel Familial</h5>
-							<p class="card-text">
-								Parfait pour les familles avec des activités
-								pour tous les âges.
-							</p>
-							<ul class="list-unstyled">
-								<li>svg 4 étoiles</li>
-								<li>svg Club enfants</li>
-								<li>svg Piscine</li>
-							</ul>
-							<button
-								class="btn btn-primary w-100"
-								onclick="selectHotel('Hôtel Familial')"
-							>
-								Je réserve
-							</button>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow-sm d-flex flex-column">
+							<img
+								src="../img/3.jpg"
+								class="card-img-top"
+								alt="Hôtel Familial"
+							/>
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title fw-bold text-primary">
+									Hôtel Familial
+								</h5>
+								<p class="card-text">
+									Parfait pour les familles avec des activités
+									pour tous les âges.
+								</p>
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<img
+											src="../acc/star.svg"
+											alt="étoiles"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										4 étoiles
+									</li>
+									<li class="mb-2">
+										<img
+											src="../acc/child.svg"
+											alt="enfants"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										Club enfants
+									</li>
+									<li class="mb-2">
+										<img
+											src="../acc/swim.svg"
+											alt="piscine"
+											class="me-2"
+											style="width: 20px; height: 20px"
+										/>
+										Piscine
+									</li>
+								</ul>
+								<div class="mt-auto">
+									<button
+										class="btn btn-primary w-100"
+										onclick="selectHotel('Hôtel Familial')"
+									>
+										Je réserve
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="text-center mt-4">
-				<a href="booking.html" class="btn btn-primary btn-lg">Retour</a>
+				<a href="booking.html" class="btn btn-outline-secondary ms-2"
+					>Retour</a
+				>
 			</div>
 		</div>
 		<script>
