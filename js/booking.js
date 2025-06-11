@@ -1,4 +1,4 @@
-// Initialisation des valeurs à zéro au chargement de la page
+// Init v0
 document.addEventListener("DOMContentLoaded", function () {
 	// Réinitialisation des champs numériques
 	document.getElementById("adults").value = 0;
@@ -12,35 +12,35 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 });
 
-// Fonction pour incrémenter une valeur
+// icrémenter v0
 function incrementValue(fieldId) {
 	const input = document.getElementById(fieldId);
 	const currentValue = parseInt(input.value);
 	input.value = currentValue + 1;
 
-	// Si c'est le champ enfants, mettre à jour les champs d'âge
+	// maj age children
 	if (fieldId === "children") {
 		updateChildrenAgeFields();
 	}
 }
 
-// Fonction pour décrémenter une valeur
+// décrémenter v0
 function decrementValue(fieldId) {
 	const input = document.getElementById(fieldId);
 	const currentValue = parseInt(input.value);
 
-	// Vérifier si la valeur est supérieure à 0 avant de décrémenter
+	// valeur supérieure à 0 avant de décrémenter
 	if (currentValue > 0) {
 		input.value = currentValue - 1;
 
-		// Si c'est le champ enfants, mettre à jour les champs d'âge
+		// maj age children
 		if (fieldId === "children") {
 			updateChildrenAgeFields();
 		}
 	}
 }
 
-// Fonction pour mettre à jour les champs d'âge des enfants
+// maj champs childrenAge
 function updateChildrenAgeFields() {
 	const childrenCount = parseInt(document.getElementById("children").value);
 	const childrenAgeCell = document.getElementById("childrenAgeCell");
@@ -53,14 +53,13 @@ function updateChildrenAgeFields() {
 		return;
 	}
 
-	// Vider le conteneur
 	childrenAgeContainer.innerHTML = "";
 
 	if (childrenCount > 0) {
-		// Afficher la cellule d'âge
+		// cellule d'âge
 		childrenAgeCell.style.display = "";
 
-		// Créer les champs d'âge pour chaque enfant
+		// champs d'âge pour chaque enfant
 		for (let i = 0; i < childrenCount; i++) {
 			const ageInput = document.createElement("input");
 			ageInput.type = "number";
@@ -71,7 +70,6 @@ function updateChildrenAgeFields() {
 			ageInput.placeholder = `Âge de l'enfant ${i + 1}`;
 			ageInput.required = true;
 
-			// Ajouter un gestionnaire d'événements pour valider l'âge
 			ageInput.addEventListener("input", function () {
 				validateChildAge(this);
 			});
@@ -84,7 +82,7 @@ function updateChildrenAgeFields() {
 	}
 }
 
-// Fonction pour valider l'âge d'un enfant
+// valider l'âge
 function validateChildAge(input) {
 	// Convertir en nombre et supprimer les zéros initiaux
 	let age = parseInt(input.value);
@@ -100,7 +98,7 @@ function validateChildAge(input) {
 	input.value = age;
 }
 
-// Fonction pour valider les dates
+// valider dates
 function validateDates() {
 	const departureDate = document.getElementById("departureDate").value;
 	const arrivalDate = document.getElementById("arrivalDate").value;
@@ -120,9 +118,9 @@ function validateDates() {
 	return true;
 }
 
-// Fonction pour valider le formulaire
+// valider le formulaire
 function validateForm(event) {
-	event.preventDefault(); // Empêcher la soumission par défaut
+	event.preventDefault(); // stop soumission par défaut
 
 	const country = document.getElementById("country").value;
 	const departureDate = document.getElementById("departureDate").value;
@@ -160,7 +158,7 @@ function validateForm(event) {
 		return false;
 	}
 
-	// Vérifier les âges des enfants si présents
+	// vérifier les âges des enfants si présents
 	const childrenAges = [];
 	if (children > 0) {
 		for (let i = 0; i < children; i++) {
@@ -191,7 +189,6 @@ function validateForm(event) {
 	};
 	localStorage.setItem("bookingData", JSON.stringify(bookingData));
 
-	// Si toutes les validations sont passées, rediriger vers la page des hôtels
 	window.location.href = "hotels.html";
 	return true;
 }
