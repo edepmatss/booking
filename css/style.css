@@ -203,8 +203,14 @@ input[type="number"] {
 	-moz-appearance: textfield;
 }
 
-.text-color {
-	color: var(--text-color);
+.icon-sm {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
 }
 
-/* Style pour les champs d'âge des enfants */
+.icon-md {
+	width: 28px;
+	height: 28px;
+	vertical-align: -5px;
+}
